@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .colorbox {
+      height: 100px;
+      width: 100px;
+      background-color: rgb(230, 94, 0);
+    }
+
+    main {
+      margin-top: 15%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+
+    #colorpickerwrapper {
+      padding: 50px 15px;
+    }
+
+    .sectionwrapper {
+      display: flex;
+    }
+  </style>
+
+  <body>
+    <div class="sectionwrapper">
+      <div id="colorpickerwrapper">
+        <p>Select color</p>
+        <input id="colorpicker" type="color" value="#ff5e00" />
+        <div class="colorbox"></div>
+      </div>
+      <div>
+        <p id="hex">Hex: #ff5e00</p>
+        <p id="rgb">RGB: 230, 94, 0</p>
+        <p id="hsl">HSL: 22, -101, 12750</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
