@@ -34,6 +34,10 @@ function showRgb(convertedR, convertedG, convertedB) {
 }
 
 function getHslValue(r, g, b) {
+  r /= 255;
+  g /= 255;
+  b /= 255;
+
   let h;
   let l;
   let s;
